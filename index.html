@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">    <title>The F2E</title>
+    <script type="module" crossorigin src="/missionOne/assets/main-497e732c.js"></script>
+    <link rel="stylesheet" href="/missionOne/assets/main-26a1b28f.css">
+  </head>
+  <body>
+
+    <!--navbar -->
+    <div class="navbar d-md-block d-none">
+    <div class="container">
+      <div class="logo">
+        <img class="logoThree" src="/missionOne/assets/Vector-7c89ba0d.jpg" alt="競選logo">
+        <div class="logoName">
+          <img class="me-1" src="data:image/png;base64,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" alt="喵立翰logo名">
+        </div>
+      </div>
+      <ul class="navName">
+        <li class="mx-3"><a href="#">候選人主張</a></li>
+        <li class="mx-3"><a href="#newActivty">最新活動</a></li>
+        <li class="mx-3"><a href="#issues">政策議題</a></li>
+        <li class="mx-3"><a href="#serviceMail">民眾服務信箱</a></li>
+      </ul>
+      <a href="#donation" class="navBtn">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK3SURBVHgBrVbpcRoxFNYu1zDDD1KBRQekArYEUkE2HSQVxKnATgXYFUAHJhV4XQHrCuAHM9yQ79s8ZcSxkrD9ZrQ69t16hyIVCIfDob3dbru73a5bqVRuuI+iaIb9K/ZZtVrNuFcfAZvNJlmv108YU4yDZwyI7+MZlf1YLBYaFgywTOSIVoz2+/0LrOQ6j+O4jbWGhT2MLs40EXFGvB/NZjNXoQA3frUsm6xWq34IHRRNiS900+Vy+T2Eju78adwFYbfqDUA6w4P8fMh9oyW0TtQ7gPTGW/RcGZI2SKHuDBRsjNBnCIy8UJcaj4Qox3sVwU9HPyQtiqDxMWF+Wvc+UAFgguvoyoyVGKmLeD6fdy/kqze6rVgprI1E6JRzvV7/pNwWPmOpmYeYX7hGfjJIZrVarVNWkYS28CLx/rsWvh8pB5Th4Xx45rrL1j4YvJi1tDA5ijIXEcI+54wqVNRdi9kvTL9RfcYuetBkIqdbxactm9xFxJIGTcdYJnQzxgiMHnElZOatPFI6KacdqysA9/GFgtS/e6WgZ1g6vJiDJ4AulIvQm6uEMlAajUaKK+lgfMNRjrO+NAYnoAEUHoWyrzE2uWy0j5CpxUCgqzEe4NoOjscYCdPJRWv4081VaitW9DwCyTRlOxNBSuhmYKRgbdtFj/894jGgjvI0MNcKodj/EUUTKg7az66Xw1ktwMG95KAzCqUiTU4rks+10mePy6bVDSZ2DpaB1S/vVQBYtVefMhpK073zMTG9MqTLOJuD3U9Lm+6VIM+ewoOluWy5+RD8vvEL9Pdd69L975sLIFF+ZwVaGkQoFpso5Zz6Aoz/5ZUw8b2znO9eFIJb6ZcGTH7mljAt+cq0Mc1jBPeWvntLhV4QTsbagcrC8IiaPPK1Oa/QEwUSCoYS2pyxdkNQ1mq1slA+fwEyJDtXDR/GtAAAAABJRU5ErkJggg==" alt="按鈕icon">
+        <p>小額捐款</p>
+      </a>
+    </div>
+</div>
+
+
+
+
+
+<div class="navbarMoble d-block d-md-none">
+  <div class="container">
+    <div class="logo">
+      <img class="logoThree" src="/missionOne/assets/Vector-7c89ba0d.jpg" alt="競選logo">
+      <div class="logoName">
+        <img class="me-1" src="data:image/png;base64,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" alt="喵立翰logo名">
+      </div>
+      <a href="#" class="btn ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <img src="data:image/jpeg;base64,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" alt="">
+      </a>
+    </div>
+    <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <div class="logo"  id="offcanvasTopLabel">
+          <img class="logoMoble" src="data:image/png;base64,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" alt="競選logo手機">
+          <div class="logoNameMo">
+            <img class="me-1" src="data:image/png;base64,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" alt="喵立翰logo名手機">
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navMoble text-end list-unstyled text-end">
+          <li class="mx-3 mb-3 navMenu"><a href="#" class="text-white ">候選人主張</a></li>
+          <li class="mx-3 mb-3 navMenu"><a href="#newActivty" class="text-white ">最新活動</a></li>
+          <li class="mx-3 mb-3 navMenu"><a href="#issues" class="text-white ">政策議題</a></li>
+          <li class="mx-3 mb-3 navMenu"><a href="#serviceMail" class="text-white ">民眾服務信箱</a></li>
+        </ul>
+        <a href="#" class="navMoBtn">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOcSURBVHgBxVddVtNQEJ5JQ/Sx7gAeBI4vwg7qkaJv4gpIVgCsQFxB2xUkXQHypi1H6gqoLx6ox0N3YB+lpRnnu0naUJof9IE555LQ5N5v5t75Zr4QPZJxmZdqq37VtmmLLd5nppoQrd55Qaivf/s8ldPOL+9TmTW5CNBxrIOQ5VBfrKYeDVP3VVp4xsJBZ7D/kf4FuP7C36Ipn1AcnUbZE5HWdEy93tAbLTpYcahmWbRHwvuJAxOWV71Lb1gaeHe9vS8sQQJos3ifMxZYtLeb/uqU6DhxwCI5+nLlNQuB6xvtA4VrRqBydLZkUhnb2fD1eLhhQIRd3fp2JnBNvV0Rvsb9VKP8eukF9B9W3/Rdjdw3/4Sy3f3p9ZNnVvpFBT3HFZEWge6u+3sYee90dQ2sFSHxCXLhHrCe6wdCIgkFZbZXmBs6/KL3sJbmCSi2ajt0eA9Yk8nFtWJJLg1wHLsbQYOibK/W1wMfv+XN0eQ0UTPzQRK1AX4dbZmJNi97AWALX2gEM881S1w9oov6c6VfhmHNOOqq/ZS2ZsCWxe+iNeSU8jwXbkSFRFqTG3mGoTuFHapqOAd5c7UGmKzmMKEZLIy8GGtxoBI2HTsNFBGM2z+EMxwVz4nX1pI7B2YDPFqsSEvc/o6L7Uyaybka8BtZ6w5cL29qvPaQ4kqYplOh17djaupW47z2wHdNLJytW+jwzPE5hkUPMAB0rtw1LUWeoCNhpyz26xvBdZqjZexBwDAAoDCcDdztCsvaMo5mmfC8nSbAQ0wu8rq+GfgrT3gWHWiScNSK8iTXYTBCR38OLPINF8eJMi7TQkFtNz0aC2HoT7k0SqwSry2SAhaLAnMt4CLZEXWUu8ca+W+MuJiMNOLcrV6sFQZYudiPuVjLK3/dH15ft3Zbk6s95660qCKviiqeZrQLRnQGkTQywIYOqi5wvyL5hR8AmlxYBMCj7pV3CIfy5qwQowGRSqhZT55ldcJROPhGmzgVWCiaVGHc8nLMCIs42rNL7zj5/Y4QiHXWhXmwRDU81NCvNW+g2wjUSx/HHR6bLdPigHtorjKRZxkiTUAhBhZzYKnYS+sltMqJ9uheSbEXt050MaNOsiRUpryFWlSOns/EuzoAwT6eLpe3ToVqoa2CPwY0Nb0i77MSr/BLYmfTP7ZUqqa/HkAllkjU65dFdeHLAjxvoV3mNY9SnzAwqBQIdgn5Jd8vj8NQqMeWtFETSnerx7C/k5jPPnh5eUwAAAAASUVORK5CYII=" alt="按鈕icon">
+          <p>小額捐款</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!--banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="words">
+          <p class="smTitle">2023 THE F2E 立委競選</p>
+          <h1 class="bgTitle d-none d-md-block">從<span>喵</span>的眼中<br>看見台灣</h1>
+          <h1 class="bgTitleMo d-block d-md-none">從<span>喵</span>的眼中</h1>
+          <h1 class="bgTitleSm d-block d-md-none">看見台灣</h1>
+        </div>
+        <div class="miauPic">
+            <img src="/missionOne/assets/Main Img-候選人-f36ed9c9.png" alt="喵立翰圖片">
+        </div>
+        <p class="eName">miao <br class="d-block d-md-none">Li-han</p>
+        <p class="cName " >喵立翰</p>
+        <div class="arrows">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAC8CAYAAABMv0+SAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVHgB7dDdDcIgFIZhfqaAMSDs0Q3EzboPN7qBXjEGWpMatKehJl6+X0JCON8TAkoJiTG2ZUkzo34MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOC/IMZ4kvZrrFCeu6PJe3+rtV43QCiLyA7KG6QPlPtk01rTB8vKGKPt85qLc+6utZ4G5XMpZX69YYTW8rJ//9Ie6ssfQELf5d2EEHJKKUuzBw1LQxHNsSNJAAAAAElFTkSuQmCC" alt="箭頭">
+          <p>KEEP IT POSSIBLE</p>
+        </div>
+        <div class="blueBox">
+          <h3 class="text-center">護航台灣幸福經濟<br class="d-block d-lg-none">  從照顧每一隻貓咪開始</h3>
+          <p>我堅信，藉由推動更完善的貓咪福利和相關政策，更是間接地投資於台灣的未來。
+             畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，
+             為台灣的 GDP經濟帶來巨大效益。
+          </p>
+          <p>
+             因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照
+             顧，同時也為台灣的經濟發展助一臂之力。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="news" id="newActivty">
+      <div class="container">
+        <h2><img src="data:image/png;base64,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" alt="最新活動"></h2>
+
+        <!--卡面區-->
+        <div class="d-none d-md-block">
+          <div class="d-flex">
+            <div class="activeCard ms-4">
+              <div class="card-header">
+                <img src="/missionOne/assets/Rectangle 6-5d8e8aa7.jpg" alt="第一則活動">
+                <div class="dayTw">
+                  <p class="daySet">26</p>
+                  <span>DEC.</span>
+                </div>
+                <div class="triangle"></div>
+              </div>
+              
+              <div class="card-body">
+                <h3>參與台北寵物論壇 爭取貓咪友善環境</h3>
+                <p>
+                  炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，<br>決定要全力宣傳
+                  「貓咪至上」的理念！我相信，我們的都市中，<br>每一隻貓咪都應該有自己的 VIP 
+                  休憩空間。
+                </p>
+              </div>
+            </div>
+    
+            <div class="rightCards ms-4">
+              <div class="card mb-4">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="/missionOne/assets/Rectangle 61-6d625d71.jpg" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="card-tag">2023.12.26</div>
+                      <div class="card-title">帶著你的貓耳，來和我一起走！</div>
+                      <div class="card-content">
+                        街上氣氛真的很棒，從小孩到大人，甚至有些狗狗朋<br>
+                        友都帶著貓耳來找我握手，真的太可愛了！這次的活<br>
+                        動不僅讓我看到大家的熱情，更加堅定了我推進「貓<br>
+                        咪友善環境」政策的決心。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="/missionOne/assets/Group 5-d7af66e5.jpg" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="card-tag">2023.12.20</div>
+                      <div class="card-title">收容所模特兒大比拼！</div>
+                      <div class="card-content">
+                        活動三消息內容：今天的收容所不再是一片寂靜。為<br>
+                        了讓更多人認識到這裡的毛孩子，我們舉辦了一場前<br>
+                        所未有的「模特兒走秀」！
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--moble可見-->
+      <div class="swiper mySwiper d-block d-md-none">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide d-flex align-items-stretch">
+            <div class="card-header">
+              <img src="/missionOne/assets/Rectangle 6-5d8e8aa7.jpg" alt="第一則活動">
+              <div class="dayTw">
+                <p class="daySet">26</p>
+                <span>DEC.</span>
+              </div>
+              <div class="triangle"></div>
+            </div>
+            
+            <div class="card-body">
+              <h3>參與台北寵物論壇 爭取貓咪友善環境</h3>
+              <p>
+                炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳
+                「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的 VIP 
+                休憩空間。
+              </p>
+            </div>
+          </div>
+  
+          <div class="swiper-slide d-flex align-items-stretch">
+            <div class="card-header">
+              <img src="/missionOne/assets/Rectangle 61-6d625d71.jpg" alt="第二則活動">
+              <div class="dayTw">
+                <p class="daySet">26</p>
+                <span>DEC.</span>
+              </div>
+              <div class="triangle"></div>
+            </div>
+            
+            <div class="card-body">
+              <h3>帶著你的貓耳，來和我一起走！</h3>
+              <p>
+                街上氣氛真的很棒，從小孩到大人，甚至有些狗狗朋
+                友都帶著貓耳來找我握手，真的太可愛了！這次的活
+                動不僅讓我看到大家的熱情，更加堅定了我推進「貓
+                咪友善環境」政策的決心。
+              </p>
+            </div>
+          </div>
+  
+          <div class="swiper-slide d-flex align-items-stretch">
+            <div class="card-header">
+              <img src="/missionOne/assets/Group 5-d7af66e5.jpg" alt="第三則活動">
+              <div class="dayTw">
+                <p class="daySet">20</p>
+                <span>DEC.</span>
+              </div>
+              <div class="triangle"></div>
+            </div>
+            
+            <div class="card-body">
+              <h3>收容所模特兒大比拼！</h3>
+              <p>
+                活動三消息內容：今天的收容所不再是一片寂靜。為
+                了讓更多人認識到這裡的毛孩子，我們舉辦了一場前
+                所未有的「模特兒走秀」！
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!--政策議題 -->
+    <div class="issues" id="issues">
+      <div class="container">
+        <h2><img src="data:image/png;base64,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" alt="政策議題"></h2>
+
+        <div class="cards  d-flex justify-content-between">
+          <div class=" card">
+            <div class="card-body py-2">
+              <p>政策一</p>
+              <h3 class="card-title">為毛孩子謀福利！推動寵物醫療保障方案</h3>
+              <ol>
+                <li>設立寵物醫療基金：每年撥款新台幣 10 億元，專款專用於支援家庭寵物的醫療費用。</li>
+                <li>提供醫療補助：每隻寵物每年可獲得高達新台幣 20,000 元的醫療補助，減輕飼主的經濟壓力。</li>
+                <li>合作動物醫院：目前已有和超過 200 家動物醫院進行初步的合作討論。</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class=" card">
+            <div class="card-body">
+              <p>政策二</p>
+              <h3 class="card-title">打造休閒天堂！推廣寵物休閒與娛樂場所</h3>
+              <ol>
+                <li>建立寵物公園：每年撥款新台幣 5 億元，用於在各大都市建立專屬的寵物公園。</li>
+                <li>推廣寵物友善商家：鼓勵商家提供寵物友善的環境，並為參與的商家提供稅收優惠。預計
+                  在政策實施後的首年，將有超過 500 家商家加入此計畫。</li>
+                <li>舉辦寵物活動和工作坊：與各大寵物社團和組織合作，每年舉辦至少 5 場大型的寵物活動，包括寵物才...</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class=" card">
+            <div class="card-body">
+              <p>政策三</p>
+              <h3 class="card-title">推廣寵物飼養教育，讓愛更加專業</h3>
+              <ol>
+                <li>建立寵物飼養教育中心：每年撥款新台幣 3 億元，用於在全國各地建立專業的寵物飼養教育中心。預計在第一年內，在全國至少 5 大城市設立教育中心。</li>
+                <li>推廣寵物飼養課程：與學校、社區組織和寵物社團合作，推出一系列免費的寵物飼養課程。預計每年將有超過 10,000 名市民受益。</li>
+                <li> 製作教育資料：出版寵物飼養手冊、影片和線上課程，讓所有有意飼養寵物的家庭都...</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="donation" id="donation">
+      <div class="container">
+        <div class="moneySection">
+          <h2><img src="data:image/png;base64,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" alt="小額捐款"></h2>
+          <p>您的小筆捐款，<br class="d-block d-lg-none">是每隻毛孩未來的大大動力！</p>
+          <h4>累積總金額</h4>
+          <p class="num">NT$<span class="counter">987,655,873</span></p>
+          <a  class="numBtn nav-link ">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK3SURBVHgBrVbpcRoxFNYu1zDDD1KBRQekArYEUkE2HSQVxKnATgXYFUAHJhV4XQHrCuAHM9yQ79s8ZcSxkrD9ZrQ69t16hyIVCIfDob3dbru73a5bqVRuuI+iaIb9K/ZZtVrNuFcfAZvNJlmv108YU4yDZwyI7+MZlf1YLBYaFgywTOSIVoz2+/0LrOQ6j+O4jbWGhT2MLs40EXFGvB/NZjNXoQA3frUsm6xWq34IHRRNiS900+Vy+T2Eju78adwFYbfqDUA6w4P8fMh9oyW0TtQ7gPTGW/RcGZI2SKHuDBRsjNBnCIy8UJcaj4Qox3sVwU9HPyQtiqDxMWF+Wvc+UAFgguvoyoyVGKmLeD6fdy/kqze6rVgprI1E6JRzvV7/pNwWPmOpmYeYX7hGfjJIZrVarVNWkYS28CLx/rsWvh8pB5Th4Xx45rrL1j4YvJi1tDA5ijIXEcI+54wqVNRdi9kvTL9RfcYuetBkIqdbxactm9xFxJIGTcdYJnQzxgiMHnElZOatPFI6KacdqysA9/GFgtS/e6WgZ1g6vJiDJ4AulIvQm6uEMlAajUaKK+lgfMNRjrO+NAYnoAEUHoWyrzE2uWy0j5CpxUCgqzEe4NoOjscYCdPJRWv4081VaitW9DwCyTRlOxNBSuhmYKRgbdtFj/894jGgjvI0MNcKodj/EUUTKg7az66Xw1ktwMG95KAzCqUiTU4rks+10mePy6bVDSZ2DpaB1S/vVQBYtVefMhpK073zMTG9MqTLOJuD3U9Lm+6VIM+ewoOluWy5+RD8vvEL9Pdd69L975sLIFF+ZwVaGkQoFpso5Zz6Aoz/5ZUw8b2znO9eFIJb6ZcGTH7mljAt+cq0Mc1jBPeWvntLhV4QTsbagcrC8IiaPPK1Oa/QEwUSCoYS2pyxdkNQ1mq1slA+fwEyJDtXDR/GtAAAAABJRU5ErkJggg==" alt="前往捐款">
+            <p>前往捐款</p>
+          </a>
+        </div>
+
+        <div class="secondSection" id="secondSection">
+          <div class="secPage">
+            <h2>選擇捐款方案</h2>
+            <ul class="row row-col-2 row-col-md-3">
+              <li class="col-md-4 col-6 outline">
+                <a href="#">
+                  <h4>喵星人之友</h4>
+                  <p>NT$600</p>
+                  <span>已有 9957 人贊助</span>
+                </a>
+              </li>
+              <li class="col-md-4 col-6 outline mx-2 active">
+                <a href="#">
+                  <h4>喵星大使</h4>
+                  <p>NT$6,000</p>
+                  <span>已有 2000 人贊助</span>
+                </a>
+              </li>
+              <li class="col-md-4 col-6 outline">
+                <a href="#">
+                  <h4>喵星傳奇</h4>
+                  <p>NT$60,000</p>
+                  <span>已有 9957 人贊助</span>
+                </a>
+              </li>
+              <li class="col-md-12 col-6 outline area">
+                <label for="inputNum" class="col-form-label fw-bold">自訂捐款金額</label>
+                <div class="colInput">
+                  <input type="text" class="col-sm-9 form-control" id="inputNum" placeholder="請輸入捐款金額">
+                </div>
+              </li>
+            </ul>
+            
+            <div class="d-flex justify-content-center secbbtn mt-2">
+              <button class="one me-1">返回</button>
+              <button class="sec d-flex"   data-bs-toggle="modal" data-bs-target="#donateBtn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK3SURBVHgBrVbpcRoxFNYu1zDDD1KBRQekArYEUkE2HSQVxKnATgXYFUAHJhV4XQHrCuAHM9yQ79s8ZcSxkrD9ZrQ69t16hyIVCIfDob3dbru73a5bqVRuuI+iaIb9K/ZZtVrNuFcfAZvNJlmv108YU4yDZwyI7+MZlf1YLBYaFgywTOSIVoz2+/0LrOQ6j+O4jbWGhT2MLs40EXFGvB/NZjNXoQA3frUsm6xWq34IHRRNiS900+Vy+T2Eju78adwFYbfqDUA6w4P8fMh9oyW0TtQ7gPTGW/RcGZI2SKHuDBRsjNBnCIy8UJcaj4Qox3sVwU9HPyQtiqDxMWF+Wvc+UAFgguvoyoyVGKmLeD6fdy/kqze6rVgprI1E6JRzvV7/pNwWPmOpmYeYX7hGfjJIZrVarVNWkYS28CLx/rsWvh8pB5Th4Xx45rrL1j4YvJi1tDA5ijIXEcI+54wqVNRdi9kvTL9RfcYuetBkIqdbxactm9xFxJIGTcdYJnQzxgiMHnElZOatPFI6KacdqysA9/GFgtS/e6WgZ1g6vJiDJ4AulIvQm6uEMlAajUaKK+lgfMNRjrO+NAYnoAEUHoWyrzE2uWy0j5CpxUCgqzEe4NoOjscYCdPJRWv4081VaitW9DwCyTRlOxNBSuhmYKRgbdtFj/894jGgjvI0MNcKodj/EUUTKg7az66Xw1ktwMG95KAzCqUiTU4rks+10mePy6bVDSZ2DpaB1S/vVQBYtVefMhpK073zMTG9MqTLOJuD3U9Lm+6VIM+ewoOluWy5+RD8vvEL9Pdd69L975sLIFF+ZwVaGkQoFpso5Zz6Aoz/5ZUw8b2znO9eFIJb6ZcGTH7mljAt+cq0Mc1jBPeWvntLhV4QTsbagcrC8IiaPPK1Oa/QEwUSCoYS2pyxdkNQ1mq1slA+fwEyJDtXDR/GtAAAAABJRU5ErkJggg==" alt="我要捐款">
+                <p>我要捐款</p>
+              </button>
+            </div>
+
+            <!--捐款modal-->
+            <div class="modal fade " id="donateBtn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body text-center">
+                    <h4 class="thX">感謝您成為喵星大使</h4>
+                    <p class="conTitle">捐款金額</p>
+                    <p class="conNum">NT$6,000</p>
+                  </div>
+                  <div class="modal-footer" id="donaBtn">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">返回</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="serviceMail"  id="serviceMail">
+      <div class="container">
+        <div class="serviceContent">
+          <h5><img src="data:image/png;base64,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" alt="民眾服務信箱"></h5>
+          <p>您的聲音，我們的行動！</p>
+          <p>
+            親愛的鄉親，每一位市民的意見都是我們社<br class="d-none d-md-block">
+            區前進的原動力。無論大小事，我都誠摯希<br class="d-none d-md-block">
+            望聽到您的建議。分享您的想法，一同為我<br class="d-none d-md-block">
+            們的未來打造更美好！
+          </p>
+        </div>
+        
+        <form action="">
+          <div class="mb-3 inputText">
+            <input type="text" class="form-control" id="exampleText" placeholder="您的姓名">
+          </div>
+          <div class="mb-3 inputText">
+            <input type="email" class="form-control" id="exampleEmail" placeholder="您的 Email">
+          </div>
+          <div class="mb-3 inputText">
+            <input type="phone" class="form-control" id="examplePhone" placeholder="您的手機">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="您的建言"></textarea>
+          </div>
+          <div class="sendBtn">
+            <button type="submit" class="formBtn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">送出意見</button>
+          </div>
+        </form>
+
+        <!-- Modal -->
+        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h4>感謝您抽出寶貴的時間給予我們寶貴的建議。</h4>
+                <p>
+                  我們非常重視您的意見，它是我們不斷改進和提升服務的動力。您提出的
+                  建議已經轉交給相關部門進行評估，我們將努力在未來的服務中加以考慮
+                  和實施。
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">返回</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="catImg">
+        <img src="/missionOne/assets/Mokker (6) 1-814c8686.png" alt="">
+      </div>
+    </div>
+
+    <div class="footer">
+    <div class="container">
+      <div class="footerLogo">
+        <img class="logoFooter" src="data:image/png;base64,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" alt="競選logo手機">
+          <div class="footerNameMo">
+            <img class="me-1" src="data:image/png;base64,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" alt="喵立翰logo名手機">
+          </div>
+      </div>
+      <div class="menuInfo">
+        <div class="menu">
+          <p>Menu</p>
+          <div class="d-flex">
+            <ul class="footerMenuLeft">
+              <li class="item"><a href="#">首頁</a></li>
+              <li class="item"><a href="#newActivty">最新活動</a></li>
+              <li class="item"><a href="#serviceMail">民眾服務信箱</a></li>
+            </ul>
+            <ul class="footerMenuRight">
+              <li class="item"><a href="#">候選人主張</a></li>
+              <li class="item"><a href="#issues">政策議題</a></li>
+              <li class="item"><a href="#donation">小額捐款</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="officeInfo">
+          <p>Office information</p>
+          <ul>
+            <li>地址：<a class="noline" href="#">台北市喵星區毛茸茸大道88號喵喵大樓3樓</a></li>
+            <li>電話：<a class="noline" href="tel:+886-2-8885678">(02) 888-5678</a></li>
+            <li>郵件：<a class="mailColor" href="mailto:meowoffice@linmeow.tw">meowoffice@linmeow.tw</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="d-block text-center footerBom">版權聲明：© 2023 喵立翰（Miao Li-Han） 版權所有。</p>
+  </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+  </body>
+</html>
