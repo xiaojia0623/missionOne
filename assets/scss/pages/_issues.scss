@@ -1,0 +1,75 @@
+.issues{
+    padding: 50px 0;
+    background-color: $primary;
+    h2{
+        text-align: center;
+        padding: 15px 0;
+    }
+    .cards{
+        .card{
+            overflow: hidden;
+            max-width:24rem;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .card-body{
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            &:hover{
+                animation-name: bounce;
+                animation-timing-function: ease;
+            }
+            p{
+                background-color: $secondary;
+                color:#ffffff;
+                display: inline-block;
+                padding: 10px 10px;
+                border-radius: 10px 0 10px 0;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: bold;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+        }
+        .card-title{
+            font-weight: 700;
+            text-align: start;
+            line-height: 36px;
+            font-size: 24px;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        ol{
+            li{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: bold;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+        }
+    }
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-70px); }
+    100% { transform: translateY(0); }
+}
+
+@media(max-width:768px){
+    .issues{
+        .cards{
+            flex-direction: column;
+            padding: 0 20px;
+            .card{
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            .card-body{
+                pointer-events: none;
+            }
+            .card-down{
+                margin-top: 0px;
+            }
+        }
+    }
+}

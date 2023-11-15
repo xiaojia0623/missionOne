@@ -1,0 +1,105 @@
+.footer{
+    height: auto;
+    background-color: $primary;
+    .container{
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .footerLogo{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .footerNameMo{
+          margin-left: 10px;
+          display: flex;
+        }
+      }
+      .menuInfo{
+        padding: 20px 0;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu{
+        margin-right: 40px;
+        p{
+          text-align: center;
+          color:#FFB300;
+          font-size: 13px;
+          line-height: 20px;
+        }
+        .footerMenuLeft, .footerMenuRight{
+          list-style-type: none;
+          .item{
+            text-align: center;
+            a{
+              text-decoration: none;
+              font-weight: bold;
+              color:#ffffff;
+              font-size: 15px;
+              line-height: 22px;
+              &:hover{
+                color:#FFB300;
+              }
+            }
+          }
+        }
+      }
+      .officeInfo{
+        p{
+          text-align: center;
+          color:#FFB300;
+          font-size: 13px;
+          line-height: 20px;
+        }
+        ul{
+          list-style-type: none;
+          li{
+            color:#ffffff;
+            font-size: 15px;
+            line-height: 22px;
+            .noline{
+              text-decoration: none;
+            }
+            a{
+              font-weight: bold;
+              color:#ffffff;
+              font-size: 15px;
+              line-height: 22px;
+            }
+            .mailColor{
+              &:hover{
+                color:#FFB300;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footerBom{
+      color:#999999;
+      padding: 20px 0;
+    }
+  }
+  
+  
+  @media(max-width:768px){
+    .footer{
+      padding: 20px 12px;
+      .container{
+        padding: 20px 12px;
+        .footerLogo{
+          display: none;
+        }
+        .menuInfo{
+          flex-direction: column;
+          justify-content: center;
+          padding: 0;
+          .menu{
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }

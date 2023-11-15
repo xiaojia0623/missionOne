@@ -1,0 +1,277 @@
+.donation{
+    background-image: url(/assets/images/bg-小額捐款.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 576px;
+    object-fit: cover;
+    .moneySection{
+        background-color: #ffffff;
+        display: inline-block;
+        padding: 20px 30px;
+        border-radius: 80px;
+        text-align: center;
+        margin-top: 80px;
+        h2{
+            padding: 10px 0;
+        }
+        p{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        h4{
+            font-weight: bold;
+            font-size: 35px;
+            line-height: 56px;
+            font-family: 'Noto Sans TC', sans-serif;
+            color:$primary;
+        }
+        .num{
+            font-size: 60px;
+            line-height: 72px;
+            font-weight: bold;
+            color:$primary;
+        }
+        .numBtn{
+            background-color: $primary;
+            padding: 10px 30px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 100px;
+            cursor: pointer;
+            img{
+                margin-right: 10px;
+                align-self: center;
+                width: 35px;
+            }
+            p{
+                color:#ffffff;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 42px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .secondSection{
+        padding-top: 50px;
+        .secPage{
+            display: inline-block;
+            background-color: #ffffff;
+            padding: 20px 10px;
+            border-radius: 80px;
+            text-align: center;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        ul{
+            padding: 10px;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            li{
+                width: 25%;
+                padding: 20px 10px;
+                border-radius: 8px;
+                &.active{
+                    border:3px solid $primary;
+                }
+            }
+            .outline{
+                border: 2px solid #A9A9A9;
+                border-radius: 10px;
+            }
+            .area{
+                width: 77%;
+                margin-top: 10px;
+            }
+            a{
+                text-decoration: none;
+                h4{
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: bold;
+                }
+                span{
+                    color:#999999;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+        }
+        .bottomZone{
+            display: flex;
+            align-items: center;
+            label{
+                width: 30%;
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 700;
+            }
+            .colInput{
+                width: 68%;
+                border: 2px solid #A9A9A9;
+                padding: 10px;
+                border-radius: 10px;
+                input{
+                    width: 100%;
+                    
+                }
+            }
+        }
+        .one{
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 42px;
+            padding: 15px 40px;
+            color:$primary;
+            background-color: #ffffff;
+            border: 2px solid $primary;
+            border-radius: 80px;
+            &:hover{
+                background-color: $primary;
+                color:#ffffff;
+            }
+        }
+        .sec{ //我要捐款按鈕
+            background-color: $primary;
+            color:#ffffff;
+            padding: 2px 30px;
+            margin-left: 10px;
+            border-radius: 80px;
+            img{
+                margin-right: 10px;
+                align-self: center;
+                width: 35px;
+            }
+            p{
+                color:#ffffff;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 42px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .modal{
+        .modal-content{
+            border-radius: 67px;
+            padding: 20px 30px;
+        }
+        .modal-body{
+            h4{
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: bold;
+            }
+            .conTitle{
+                font-size: 25px;
+                line-height: 40px;
+                font-weight: bold;
+                color:$primary;
+            }
+            .conNum{
+                font-size: 30px;
+                line-height: 40px;
+                font-weight: bold;
+                color:$primary;
+            }
+
+        }
+        .modal-footer{
+            border-top: none;
+            margin:  0 auto;
+            .btn{
+              font-weight: bold;
+              background-color: #ffffff;
+              border: 3px solid $primary;
+              color:$primary;
+              padding: 10px 30px;
+              border-radius: 100px;
+              font-size: 28px;
+              &:hover{
+                background-color: $primary;
+                color:#ffffff;
+              }
+            }
+          }
+    }
+}
+
+@media(max-width:768px){
+    .donation{
+        height: 100%;
+        .container{
+            padding:  20px;
+        }
+        .moneySection{
+            margin: 0;
+            padding: 30px;
+            h4{
+                font-size: 25px;
+                line-height: 40px;
+            }
+            .num{
+                font-size:30px;
+                line-height: 40px;
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+        .secondSection{
+            padding: 30px 0;
+            width: 374px;
+            .secPage{
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    li{
+                        width: 43%;
+                        margin: 10px ;
+                    }
+                    .area{
+                        label{
+                            padding-top: 22px;
+                        }
+                        .colInput{
+                            width: 90%;
+                            padding: 0 6px;
+                            input{
+                                width: 136px;
+                            }
+                        }
+                    }
+                }
+            }
+            .secbbtn{
+                .one{
+                    font-size: 29px;
+                    padding: 0px 5px;
+                }
+                .sec{
+                    p{
+                        font-size: 20px;
+                    }
+
+                }
+            }
+        }
+        
+    }
+}
